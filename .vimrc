@@ -2,6 +2,10 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+edit vimrc/zshrc and load vimrc bindings
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -22,6 +26,15 @@ set wildmenu
 
 "Always show current position
 set ruler
+
+"Show line numbers by default
+set number
+
+"Show currently inputting command
+set showcmd
+
+" highlight current line
+set cursorline
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -80,6 +93,7 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 
 set ai "Auto indent
 set si "Smart indent
@@ -88,6 +102,10 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader>no :noh<cr>
 
@@ -117,3 +135,6 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
+""""""""""""""""""""""""""""""
+" => Plugin settings
+""""""""""""""""""""""""""""""
