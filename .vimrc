@@ -125,6 +125,19 @@ let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
+"copies to clipboard register from visual
+vnoremap <leader>y "*y
+
+"sets number from leader
+nnoremap <leader>num :set number<cr>
+
+"toggle NERDTree side window
+nnoremap <leader>nt :NERDTreeToggle<cr>
+
+"open/close quickfix window
+nnoremap <leader>qf :copen<cr>
+nnoremap <leader>qfq :cclose<cr>
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
