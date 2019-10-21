@@ -129,7 +129,7 @@ au TabLeave * let g:lasttab = tabpagenr()
 vnoremap <leader>y "*y
 
 "sets number from leader
-nnoremap <leader>num :set number<cr>
+nnoremap <leader>num :set invnumber<cr>
 
 "toggle NERDTree side window
 nnoremap <leader>nt :NERDTreeToggle<cr>
@@ -175,6 +175,9 @@ Plugin 'airblade/vim-gitgutter'
 "Ctrl-P
 Plugin 'kien/ctrlp.vim'
 
+"Rainbow Parens
+Plugin 'kien/rainbow_parentheses.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -194,3 +197,26 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 "NERDTree
 map <leader>nn :NERDTreeToggle<cr>
 
+"Rainbow Parens
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['blue',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
