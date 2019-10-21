@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " edit vimrc/zshrc and load vimrc bindings
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>ev :sp $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Enable filetype plugins
@@ -183,7 +183,8 @@ filetype plugin indent on    " required
 "
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just 
+" :PluginUpdate     - To get the latest for everything
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
