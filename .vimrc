@@ -178,6 +178,9 @@ Plugin 'kien/ctrlp.vim'
 "Rainbow Parens
 Plugin 'kien/rainbow_parentheses.vim'
 
+"ALE
+Plugin 'dense-analysis/ale'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -220,3 +223,14 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
+
+"ALE
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\  'javascript': ['eslint'],
+\}
