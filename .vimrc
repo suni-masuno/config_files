@@ -56,10 +56,7 @@ set lazyredraw
 set showmatch 
 
 " No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
+set vb t_vb=
 
 " Enable syntax highlighting
 syntax enable 
