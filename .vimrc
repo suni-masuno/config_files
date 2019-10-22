@@ -102,6 +102,13 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"Copy to clipboard
+nnoremap <leader>c "+y
+
+"K to "Kut" lines
+nnoremap K i<enter><esc>
+
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
@@ -225,11 +232,6 @@ let g:rbpt_colorpairs = [
     \ ]
 
 "ALE
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
-
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
