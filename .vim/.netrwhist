@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/kpb0708/work/newsletter/client'
+let g:netrw_dirhist_2='/home/kpb0708/work/newsletter/client/src'
+let g:netrw_dirhist_3='/home/kpb0708/work/newsletter/client/src/types'
+let g:netrw_dirhist_4='/home/kpb0708/work/newsletter/backend/models'
